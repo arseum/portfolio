@@ -130,7 +130,7 @@ const FRAG = /* glsl */ `
     vec3 color = mix(uColorA, uColorB, step(0.82, vRand));
     color = mix(color, uColorB, vDist);
 
-    gl_FragColor = vec4(color, alpha * (0.35 + vRand * 0.5));
+    gl_FragColor = vec4(color, alpha * (0.22 + vRand * 0.4));
   }
 `;
 

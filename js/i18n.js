@@ -8,7 +8,7 @@ const DICT = {
     'nav.contact': 'Contact',
 
     'hero.kicker': 'Portfolio — 2026',
-    'hero.subtitle': 'Ingénieur IA & Data — je transforme des données brutes en systèmes intelligents.',
+    'hero.subtitle': 'Ingénieur IA & Data',
     'hero.scroll': 'défiler',
 
     'about.title': 'À PROPOS',
@@ -40,7 +40,7 @@ const DICT = {
     'contact.title': 'CONTACT',
     'contact.pitch': 'Un projet, une alternance, une mission freelance ?',
     'footer.legal': 'Auto-entrepreneur — SIRET 104 041 017 00013',
-    'footer.made': 'Conçu & codé à la main — Three.js / GSAP',
+    'footer.made': 'WEBGL · GSAP · LENIS',
   },
   en: {
     'nav.about': 'About',
@@ -49,7 +49,7 @@ const DICT = {
     'nav.contact': 'Contact',
 
     'hero.kicker': 'Portfolio — 2026',
-    'hero.subtitle': 'AI & Data Engineer — I turn raw data into intelligent systems.',
+    'hero.subtitle': 'AI & Data Engineer',
     'hero.scroll': 'scroll',
 
     'about.title': 'ABOUT',
@@ -81,7 +81,7 @@ const DICT = {
     'contact.title': 'CONTACT',
     'contact.pitch': 'A project, an apprenticeship, a freelance gig?',
     'footer.legal': 'Sole trader — SIRET 104 041 017 00013',
-    'footer.made': 'Designed & hand-coded — Three.js / GSAP',
+    'footer.made': 'WEBGL · GSAP · LENIS',
   },
 };
 
