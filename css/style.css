@@ -374,6 +374,13 @@ main { position: relative; z-index: 10; }
     repeating-linear-gradient(90deg, transparent 0 14px, rgba(200, 255, 0, 0.07) 14px 15px); }
 .project__media--app { background:
     repeating-linear-gradient(135deg, transparent 0 14px, rgba(200, 255, 0, 0.07) 14px 15px); }
+
+/* Alterne l'orientation : projets pairs = image à gauche, texte à droite */
+@media (min-width: 901px) {
+  .project:nth-of-type(even) { grid-template-columns: auto 1fr 1.4fr; }
+  .project:nth-of-type(even) .project__media { grid-column: 2; }
+  .project:nth-of-type(even) .project__content { grid-column: 3; }
+}
 .project__media img {
   position: absolute;
   inset: 0;
