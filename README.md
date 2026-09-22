@@ -2,6 +2,8 @@
 
 Portfolio one-page brutaliste/éditorial. Ingénieur IA & Data — ESILV · Institut Pasteur · Freelance.
 
+**En ligne** : https://arseum.github.io/portfolio/
+
 - **Stack** : HTML / CSS / JS pur, zéro build
 - **3D** : Three.js — nuage de particules qui se métamorphose au scroll
 - **Animations** : GSAP ScrollTrigger + Lenis (smooth scroll)
