@@ -3,8 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arsène Maître — Ingénieur IA &amp; Data</title>
-  <meta name="description" content="Portfolio d'Arsène Maître — étudiant ingénieur ESILV (IA & Data), alternant à l'Institut Pasteur, développeur freelance.">
+  <title>Arsene Maitre — Ingénieur IA &amp; Data</title>
+  <meta name="description" content="Portfolio d'Arsene Maitre — étudiant ingénieur ESILV (IA & Data), alternant à l'Institut Pasteur, développeur freelance.">
+  <!-- Aperçu de lien (LinkedIn, Slack, mail) : en anglais, les robots n'exécutent pas le JS -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://arseum.github.io/portfolio/">
+  <meta property="og:title" content="Arsene Maitre — AI &amp; Data Engineer">
+  <meta property="og:description" content="LLM evaluation pipeline at Institut Pasteur, a Claude Code plugin, and two apps in production. Final-year AI &amp; Data engineering student at ESILV.">
+  <meta property="og:image" content="https://arseum.github.io/portfolio/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' fill='%23c8ff00' text-anchor='middle'%3EAM%3C/text%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://api.fontshare.com">
@@ -61,8 +70,8 @@
     <section id="hero" class="hero section" data-section="00">
       <p class="hero__kicker mono reveal" data-i18n="hero.kicker">Portfolio — 2026</p>
       <h1 class="hero__title">
-        <span class="line"><span class="split" data-no-translate>ARSÈNE</span></span>
-        <span class="line line--indent"><span class="split accent" data-no-translate>MAÎTRE</span></span>
+        <span class="line"><span class="split" data-no-translate>ARSENE</span></span>
+        <span class="line line--indent"><span class="split accent" data-no-translate>MAITRE</span></span>
       </h1>
       <div class="hero__bottom">
         <p class="hero__subtitle reveal" data-i18n="hero.subtitle">Ingénieur IA &amp; Data</p>
@@ -82,13 +91,13 @@
       </div>
       <div class="about__grid">
         <p class="about__lead reveal" data-i18n="about.lead">
-          Étudiant ingénieur à l'ESILV en majeure DIA — Intelligence Artificielle &amp; Data —
+          Étudiant ingénieur en 5e année à l'ESILV, majeure DIA — Intelligence Artificielle &amp; Data —
           et alternant data à l'Institut Pasteur.
         </p>
         <div class="about__body">
           <p class="reveal" data-i18n="about.p1">
             Après un DUT informatique, j'ai choisi de me spécialiser dans l'IA et la data :
-            NLP, machine learning, ingénierie de données et plateformes de recherche.
+            LLM, NLP, machine learning et ingénierie de données.
           </p>
           <p class="reveal" data-i18n="about.p2">
             Également auto-entrepreneur depuis mars 2026, je conçois des sites et des
@@ -107,8 +116,8 @@
     <!-- ============ MARQUEE ============ -->
     <div class="marquee" aria-hidden="true">
       <div class="marquee__track">
-        <span>DATA × MACHINE LEARNING × NLP × FULL-STACK × DATA × MACHINE LEARNING × NLP × FULL-STACK ×&nbsp;</span>
-        <span>DATA × MACHINE LEARNING × NLP × FULL-STACK × DATA × MACHINE LEARNING × NLP × FULL-STACK ×&nbsp;</span>
+        <span>LLM × DATA × MACHINE LEARNING × NLP × FULL-STACK × LLM × DATA × MACHINE LEARNING × NLP × FULL-STACK ×&nbsp;</span>
+        <span>LLM × DATA × MACHINE LEARNING × NLP × FULL-STACK × LLM × DATA × MACHINE LEARNING × NLP × FULL-STACK ×&nbsp;</span>
       </div>
     </div>
 
@@ -122,14 +131,15 @@
       <article class="project reveal-card">
         <div class="project__index mono">P.01</div>
         <div class="project__content">
-          <h3 class="project__name" data-no-translate>LE GRIND <span class="project__badge mono" data-i18n="projects.beta">BÊTA</span></h3>
-          <p class="project__desc" data-i18n="projects.p0.desc">
+          <h3 class="project__name" data-no-translate>LE GRIND</h3>
+          <p class="project__desc" data-i18n="projects.grind.desc">
             Application desktop (Mac, Windows, Linux) qui analyse automatiquement les mains
-            Winamax : statistiques détaillées, sessions, replayer de mains, courbes de gains
-            et solver préflop. Conçue et développée en solo — Electron, SQLite, IPC typé,
-            auto-update — actuellement en bêta gratuite.
+            Winamax : statistiques détaillées, sessions, replayer de mains, courbes de gains,
+            calculateur d'équité et solver préflop. Conçue et développée en solo — Electron,
+            SQLite, IPC typé, mises à jour automatiques, télémétrie anonyme opt-in — et
+            distribuée gratuitement.
           </p>
-          <p class="project__stack mono">ELECTRON · TYPESCRIPT · REACT · SQLITE · TAILWIND</p>
+          <p class="project__stack mono">ELECTRON · TYPESCRIPT · REACT · SQLITE · VITEST</p>
           <div class="project__links mono">
             <a href="https://legrind.fr" target="_blank" rel="noopener" data-hover>
               <span data-i18n="projects.visit">Voir le site</span> ↗
@@ -145,32 +155,81 @@
       <article class="project reveal-card">
         <div class="project__index mono">P.02</div>
         <div class="project__content">
-          <h3 class="project__name" data-no-translate>FLACSERVICES.FR</h3>
-          <p class="project__desc" data-i18n="projects.p1.desc">
-            Boutique en ligne d'un auto-entrepreneur, conçue et développée en solo :
-            thème, tunnel de commande et personnalisations.
+          <h3 class="project__name"><span data-i18n="projects.pasteur.name">EXTRACTION SCIENTIFIQUE PAR LLM</span> <span class="project__badge mono" data-no-translate>INSTITUT PASTEUR</span></h3>
+          <p class="project__desc" data-i18n="projects.pasteur.desc">
+            Projet principal de mes deux ans d'alternance à l'Institut Pasteur. Le pipeline lit
+            des articles scientifiques en PDF (GROBID, Docling), isole les sections, les légendes
+            de figures et les suppléments, puis extrait par LLM les protocoles
+            d'imagerie : microscopes, objectifs, types d'expériences. Chaque configuration
+            (modèle, prompt système, texte complet ou non) est mesurée contre une vérité terrain
+            annotée, en comparant les modèles du marché (Claude, Gemini, GPT) via LiteLLM.
           </p>
-          <p class="project__stack mono">WORDPRESS · PHP · CSS</p>
+          <p class="project__stack mono">PYTHON · LITELLM · CLAUDE · GEMINI · GPT · CELERY · DOCKER</p>
           <div class="project__links mono">
-            <a href="https://flacservices.fr" target="_blank" rel="noopener" data-hover>
-              <span data-i18n="projects.visit">Voir le site</span> ↗
-            </a>
+            <span class="project__note" data-i18n="projects.pasteur.note">Code interne — démo sur demande</span>
           </div>
         </div>
-        <div class="project__media project__media--shop">
-          <img src="assets/projects/flacservices.webp" alt="Aperçu de la boutique FlacServices.fr" loading="lazy" decoding="async" onerror="this.remove()" />
-          <span class="mono">E-COMMERCE</span>
+        <div class="project__media project__media--research">
+          <picture>
+            <source media="(max-width: 900px)" srcset="assets/projects/pasteur-pipeline-mobile.webp">
+            <img class="project__img--contain" src="assets/projects/pasteur-pipeline.webp" alt="Schéma du pipeline : PDF, parsing, extraction multi-modèles via LiteLLM, évaluation contre une vérité terrain" loading="lazy" decoding="async" onerror="this.remove()" />
+          </picture>
         </div>
       </article>
 
       <article class="project reveal-card">
         <div class="project__index mono">P.03</div>
         <div class="project__content">
-          <h3 class="project__name" data-i18n="projects.p2.name">ANALYSE D'AVIS CLIENTS — ASSURANCES</h3>
-          <p class="project__desc" data-i18n="projects.p2.desc">
-            Pipeline NLP complet sur des avis d'assureurs : topic modeling (LDA),
-            embeddings (Word2Vec, sentence-transformers), classification de sentiment
-            (TF-IDF + LR/SVM, réseau de neurones) et recherche sémantique (FAISS).
+          <h3 class="project__name" data-no-translate>CLAUDE-MODS <span class="project__badge mono">OPEN SOURCE</span></h3>
+          <p class="project__desc" data-i18n="projects.mods.desc">
+            Plugin pour Claude Code : une mascotte en pixel art animée vit au-dessus du prompt.
+            Chaque jour, Claude choisit lui-même son thème parmi 18 et une phrase sur son humeur.
+            Branchée sur les hooks, elle réagit en direct à ce que fait l'agent : lecture de
+            fichiers, édition, commandes, recherches web, sous-agents, erreurs répétées, commits.
+            Terminal et app Desktop (SVG animé), en français et en anglais.
+          </p>
+          <p class="project__stack mono">TYPESCRIPT · CLAUDE CODE HOOKS · PLUGIN MARKETPLACE · SVG</p>
+          <div class="project__links mono">
+            <a href="https://github.com/arseum/claude-mods" target="_blank" rel="noopener" data-hover>GitHub ↗</a>
+          </div>
+        </div>
+        <div class="project__media">
+          <img src="assets/projects/claude-mods.webp" alt="Les 18 thèmes de la mascotte en pixel art" loading="lazy" decoding="async" onerror="this.remove()" />
+          <span class="mono">CLAUDE CODE PLUGIN</span>
+        </div>
+      </article>
+
+      <article class="project reveal-card">
+        <div class="project__index mono">P.04</div>
+        <div class="project__content">
+          <h3 class="project__name" data-i18n="projects.sport.name">MON FIL SPORTIF</h3>
+          <p class="project__desc" data-i18n="projects.sport.desc">
+            Application mobile qui réunit en un seul fil les prochains événements des équipes et
+            sportifs que l'on suit, tous sports et e-sport confondus : foot, tennis, cyclisme, F1,
+            League of Legends… Notifications avant le début, résultats ensuite. Côté serveur,
+            les données sont récupérées une fois par compétition et non par utilisateur, pour
+            passer de 1 à 50 000 utilisateurs sans refonte.
+          </p>
+          <p class="project__stack mono">REACT NATIVE · EXPO · TYPESCRIPT · CLOUDFLARE WORKERS · D1</p>
+          <div class="project__links mono">
+            <a href="https://app-sport-api.manbrozer.workers.dev" target="_blank" rel="noopener" data-hover>
+              <span data-i18n="projects.open">Ouvrir l'app</span> ↗
+            </a>
+          </div>
+        </div>
+        <div class="project__media project__media--shop">
+          <img class="project__img--contain" src="assets/projects/mon-fil-sportif.webp" alt="Trois écrans de l'app Mon fil sportif : à venir, résultats, fiche d'équipe" loading="lazy" decoding="async" onerror="this.remove()" />
+        </div>
+      </article>
+
+      <article class="project reveal-card">
+        <div class="project__index mono">P.05</div>
+        <div class="project__content">
+          <h3 class="project__name" data-i18n="projects.nlp.name">ANALYSE D'AVIS CLIENTS — ASSURANCES</h3>
+          <p class="project__desc" data-i18n="projects.nlp.desc">
+            Pipeline NLP complet sur des avis d'assureurs : topic modeling (LDA), embeddings
+            (Word2Vec, sentence-transformers), classification de sentiment (TF-IDF + LR/SVM,
+            réseau de neurones) et recherche sémantique (FAISS).
           </p>
           <p class="project__stack mono">PYTHON · NLP · SCIKIT-LEARN · TRANSFORMERS · FAISS</p>
           <div class="project__links mono">
@@ -179,29 +238,27 @@
         </div>
         <div class="project__media project__media--nlp">
           <img src="assets/projects/prediction_sentiment.png" alt="Visualisation du pipeline NLP d'analyse d'avis clients" loading="lazy" decoding="async" onerror="this.remove()" />
-          <span class="mono">NLP / ML</span>
+          <span class="mono">NLP · ML</span>
         </div>
       </article>
 
       <article class="project reveal-card">
-        <div class="project__index mono">P.04</div>
+        <div class="project__index mono">P.06</div>
         <div class="project__content">
-          <h3 class="project__name" data-no-translate>DAMOOP <span class="project__badge mono" data-i18n="projects.private">PRIVÉ</span></h3>
-          <p class="project__desc" data-i18n="projects.p3.desc">
-            Plateforme de recherche (ESILV) qui automatise la génération, l'évaluation et la
-            comparaison de modèles de données NoSQL. À partir d'un schéma UML/XMI et d'une
-            charge de travail, un pipeline Java applique deux heuristiques (MDG, Naive) et
-            score les variantes sur trois axes — coût, stabilité, CO₂/énergie — via une API
-            Flask consommée par un dashboard React.
+          <h3 class="project__name" data-i18n="projects.bankruptcy.name">PRÉDICTION DE FAILLITE</h3>
+          <p class="project__desc" data-i18n="projects.bankruptcy.desc">
+            Prédiction de la faillite d'entreprises à partir de ratios financiers
+            (92 000 bilans, 0,6 % de faillites) : nettoyage, EDA, SMOTE, comparaison de
+            quatre modèles (régression logistique, SVM, Random Forest, XGBoost) et tuning
+            des hyperparamètres. Random Forest retenu : ROC AUC 0,99, 87 % des faillites détectées.
           </p>
-          <p class="project__stack mono">JAVA · FLASK · REACT · NOSQL · UML/XMI</p>
+          <p class="project__stack mono">PYTHON · SCIKIT-LEARN · XGBOOST · IMBALANCED-LEARN · PANDAS</p>
           <div class="project__links mono">
-            <span class="project__note" data-i18n="projects.p3.note">Dépôt privé — captures d'écran sur demande</span>
+            <a href="https://github.com/arseum/Bankruptcy-Prediction-Project" target="_blank" rel="noopener" data-hover>GitHub ↗</a>
           </div>
         </div>
-        <div class="project__media project__media--research">
-          <img src="assets/projects/damoop.webp" alt="Dashboard React du projet de recherche DAMOOP" loading="lazy" decoding="async" onerror="this.remove()" />
-          <span class="mono">RESEARCH</span>
+        <div class="project__media project__media--ml">
+          <img class="project__img--contain" src="assets/projects/bankruptcy.webp" alt="Courbes ROC des modèles de prédiction de faillite" loading="lazy" decoding="async" onerror="this.remove()" />
         </div>
       </article>
     </section>
@@ -218,7 +275,7 @@
           <ul>
             <li data-no-translate>Python</li>
             <li data-no-translate>Java</li>
-            <li data-no-translate>JavaScript</li>
+            <li data-no-translate>TypeScript · JavaScript</li>
             <li data-no-translate>PHP</li>
             <li data-no-translate>SQL</li>
           </ul>
@@ -226,20 +283,21 @@
         <div class="skills__col reveal">
           <h4 class="mono accent" data-i18n="skills.c2">IA &amp; DATA</h4>
           <ul>
-            <li data-no-translate>scikit-learn</li>
+            <li data-no-translate>LLM · LiteLLM · API Claude</li>
+            <li data-i18n="skills.llmeval">Évaluation de LLM · prompting</li>
+            <li data-no-translate>scikit-learn · XGBoost</li>
             <li data-no-translate>Transformers / NLP</li>
             <li data-no-translate>Word2Vec · FAISS</li>
             <li data-no-translate>Pandas · NumPy</li>
-            <li data-i18n="skills.nosql">Bases NoSQL</li>
           </ul>
         </div>
         <div class="skills__col reveal">
           <h4 class="mono accent" data-i18n="skills.c3">FRAMEWORKS</h4>
           <ul>
             <li data-no-translate>React</li>
-            <li data-no-translate>Django</li>
+            <li data-no-translate>Electron</li>
             <li data-no-translate>Flask</li>
-            <li data-no-translate>WordPress</li>
+            <li data-no-translate>React Native · Expo</li>
             <li data-no-translate>Three.js</li>
           </ul>
         </div>
@@ -247,10 +305,11 @@
           <h4 class="mono accent" data-i18n="skills.c4">OUTILS</h4>
           <ul>
             <li data-no-translate>Git · GitHub</li>
-            <li data-no-translate>Docker</li>
+            <li data-no-translate>Docker · Kubernetes</li>
             <li data-no-translate>Linux</li>
+            <li data-no-translate>Cloudflare Workers · D1</li>
+            <li data-no-translate>SQLite</li>
             <li data-no-translate>Jupyter</li>
-            <li data-i18n="skills.more">…et bien d'autres</li>
           </ul>
         </div>
       </div>
@@ -262,7 +321,7 @@
         <span class="section__num mono accent">04</span>
         <h2 class="section__title"><span class="split" data-i18n="contact.title">CONTACT</span></h2>
       </div>
-      <p class="contact__pitch reveal" data-i18n="contact.pitch">Un projet, une alternance, une mission freelance ?</p>
+      <p class="contact__pitch reveal" data-i18n="contact.pitch">Un stage, un projet, une mission freelance ?</p>
       <a href="mailto:maitrearsene213@gmail.com" class="contact__email" data-hover>
         <span class="split" data-no-translate>maitrearsene213<span class="accent">@</span>gmail.com</span>
       </a>
@@ -272,7 +331,7 @@
         <a href="https://www.codingame.com/profile/d9ac0242cc3d22656689bee18bb335dd3997164" target="_blank" rel="noopener" data-hover>CODINGAME ↗</a>
       </div>
       <footer class="footer mono">
-        <span data-no-translate>© 2026 ARSÈNE MAÎTRE</span>
+        <span data-no-translate>© 2026 ARSENE MAITRE</span>
         <span data-i18n="footer.legal">Auto-entrepreneur — SIRET 104 041 017 00013</span>
         <span data-i18n="footer.made">WEBGL · GSAP · LENIS</span>
       </footer>

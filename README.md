@@ -1,4 +1,4 @@
-# Portfolio — Arsène Maître
+# Portfolio — Arsene Maitre
 
 Portfolio one-page brutaliste/éditorial. Ingénieur IA & Data — ESILV · Institut Pasteur · Freelance.
 
